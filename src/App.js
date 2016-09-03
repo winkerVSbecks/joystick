@@ -22,10 +22,15 @@ function App({
   return (
     <div className="bg-white vh-100 max-width-2 mx-auto flex flex-column">
 
-      <h1 className="px2 h2 regular"
-        style={{ fontFamily: 'monospace' }}>
-        Joystick
-      </h1>
+      <header className="px2 mt2 monospace flex items-center">
+        <h1 className="h2 regular m0 flex-auto">Joystick</h1>
+        <p className="px2">
+          <a className="caps text-decoration-none h6 black"
+            href="https://github.com/winkerVSbecks/joystick">
+            github
+          </a>
+        </p>
+      </header>
 
       <div className="flex-auto flex items-center">
         <Box style={ styles }

@@ -7,6 +7,7 @@ body {
 .vh-100 { height: 100vh }
 .bg-white  { background-color: #fff }
 .cursor { cursor: move }
+.monospace { font-family: monospace }
 
 .h1{ font-size: 2rem }
 .h2{ font-size: 1.5rem }
