@@ -44,7 +44,7 @@ function App({
         </div>
       </div>
 
-      <div className="flex items-center justify-between p2">
+      <div className="flex items-center justify-between p3">
         <Joystick w={ size } h={ size } onChange={ setJoyStick2 } />
         <Joystick w={ size } h={ size } onChange={ setJoyStick1 } />
       </div>

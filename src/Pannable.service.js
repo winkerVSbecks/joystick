@@ -2,8 +2,6 @@ export function onPanStart(props) {
   return e => {
     if (e.type === 'dragstart') {
       e.dataTransfer.setDragImage(getImage(), 0, 0);
-    } else {
-      e.preventDefault();
     }
 
     const boundingRect = e.currentTarget.parentNode.getBoundingClientRect();
@@ -13,7 +11,6 @@ export function onPanStart(props) {
 
 export function onPan(props) {
   return e => {
-    e.preventDefault();
     const pan = getPan(e, props.offset, props.size);
     props.setPan(pan.raw);
     props.onChange(pan.normalized);
@@ -22,7 +19,6 @@ export function onPan(props) {
 
 export function onPanEnd(props) {
   return e => {
-    e.preventDefault();
     props.setPan(
       { x: 0, y: 0 },
       () => props.onChange({ x: 0, y: 0 })
