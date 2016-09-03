@@ -37,10 +37,10 @@ function App({
 
       <div className="flex">
         <div className="col-6 flex justify-center">
-          <pre>{ JSON.stringify(joyStick1, round, 2) }</pre>
+          <pre>{ JSON.stringify(joyStick2, round, 2) }</pre>
         </div>
         <div className="col-6 flex justify-center">
-          <pre>{ JSON.stringify(joyStick2, round, 2) }</pre>
+          <pre>{ JSON.stringify(joyStick1, round, 2) }</pre>
         </div>
       </div>
 
