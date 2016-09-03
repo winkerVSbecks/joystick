@@ -1,0 +1,6 @@
+Joystick
+
+Proof of concept for in browser animation rigging.
+
+  npm start
+  npm run build
