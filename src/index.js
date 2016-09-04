@@ -8,6 +8,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-document.ontouchmove = function(event){
+document.ontouchmove = function(event) {
   event.preventDefault();
 };

@@ -28,8 +28,7 @@ function Joystick({ w, h, onChange }) {
       <Box className="relative flex items-center justify-center"
         width={ w }
         height={ h }
-        style={ styles.container }
-        dashed>
+        style={ styles.container }>
 
       <Pannable size={{ w: w / 4, h: h / 4 }} onChange={ onChange }>
         <Box style={ styles.pad }
