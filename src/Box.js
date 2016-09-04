@@ -11,8 +11,8 @@ function Box({
     width,
     height,
     transformOrigin: '50% 50%',
+    willChange: 'transform, width, height',
     transform: `translate3d(${ x }px, ${ y }px, 0)`,
-    transition: `transform 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275)`,
   };
 
   return (

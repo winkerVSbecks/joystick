@@ -3,13 +3,13 @@ import { compose, withState, lifecycle } from 'recompose';
 import './index.css';
 import Joystick from './Joystick';
 import Box from './Box';
+import debounce from 'lodash.debounce';
 
 const size = 128;
 
 const styles = {
   borderRadius: 6,
   border: '1px solid #444',
-  margin: '0 auto',
   background: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='5' height='4'><circle cx='0' cy='1' r='0.5' fill='#444' /><circle cx='2.5' cy='3' r='0.5' fill='#444' /><circle cx='5' cy='1' r='0.5' fill='#444' /></svg>")`,
   backgroundSize: '7.5px 6px',
 };
@@ -32,7 +32,7 @@ function App({
         </p>
       </header>
 
-      <div className="flex-auto flex items-center">
+      <div className="flex-auto flex items-center justify-center">
         <Box style={ styles }
           x={ joyStick2.x * 64 }
           y={ joyStick2.y * 64 }
@@ -50,8 +50,10 @@ function App({
       </div>
 
       <div className="flex items-center justify-between p3">
-        <Joystick w={ size } h={ size } onChange={ setJoyStick2 } />
-        <Joystick w={ size } h={ size } onChange={ setJoyStick1 } />
+        <Joystick w={ size } h={ size }
+          onChange={ debounce(setJoyStick2, 5) } />
+        <Joystick w={ size } h={ size }
+          onChange={ debounce(setJoyStick1, 5) } />
       </div>
 
     </div>

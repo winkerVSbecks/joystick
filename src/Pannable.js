@@ -11,7 +11,7 @@ function Pannable({ onPanStart, onPan, onPanEnd, pan, children }) {
       onDrag={ onPan }
       onTouchMove={ onPan }
       onTouchEnd={ onPanEnd }
-      onDragEnd={ onPanEnd }>
+      onDragEnd={ onPanEnd}>
       {
         React.cloneElement(children, { ...pan })
       }

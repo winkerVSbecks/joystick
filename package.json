@@ -12,6 +12,7 @@
     "react-scripts": "0.2.1"
   },
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-motion": "^0.4.4",

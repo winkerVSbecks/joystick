@@ -23,7 +23,7 @@ export function onPanEnd(props) {
       { x: 0, y: 0 },
       () => props.onChange({ x: 0, y: 0 })
     );
-  }
+  };
 }
 
 function getPan(e, offset, size) {

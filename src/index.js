@@ -7,3 +7,7 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
+
+document.ontouchmove = function(event){
+  event.preventDefault();
+};
